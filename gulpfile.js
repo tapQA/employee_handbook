@@ -81,7 +81,7 @@ gulp.task('copy:.htaccess', function () {
 });
 
 gulp.task('copy:index.html', function () {
-    return gulp.src(dirs.src + '/index.html')
+    return gulp.src(dirs.src + 'src/index.html')
                .pipe(plugins.replace(/{{JQUERY_VERSION}}/g, pkg.devDependencies.jquery))
                .pipe(gulp.dest(dirs.dist));
 });
